@@ -1,0 +1,6 @@
+oq é necessario
+
+ter node.js e jdk instalados
+criar database marceneiro no mysql
+start no application spring
+npm start no react

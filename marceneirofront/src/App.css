@@ -1,0 +1,45 @@
+div#modal{
+  text-align: center;
+  background-color: violet;
+  width: auto;
+  margin: 100px;
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.backdrop{
+  position: fixed;
+  /* z-index: 1040; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+table{
+  margin: auto;
+}
+
+form{
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+form > input[type='text']{
+  width: 100%;
+}
+form > input[type='button']{
+  margin: 10px 5px;
+}
+h4{
+  margin: 0px 0px 10px 0px;
+}

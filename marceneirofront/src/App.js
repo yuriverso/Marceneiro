@@ -128,13 +128,43 @@ function App() {
   // App
   return (
     <div>
-      <p>{JSON.stringify(entrando)}</p>
-      <Formulario digitando={digitando} entrando={entrando} cor={cor} mensagem={mensagem} cadastrar={cadastrar}/>
-      <Tabela vetor={entradas} selecionar={selecionar}/>
-      <Modal className='modal' show={visible} renderBackdrop={renderBackdrop}>
-        <ModalContent hide={() => setVisible(false)} entrando={entrando} digitando={digitando} alterar={alterar} remover={remover}/>
-      </Modal>
+      <header>
+        <h1>Marceneiro</h1>
+        <button id="header-button" disabled>Buscar</button>
+        <input type="text" placeholder="Busca" id="header-input"/>
+      </header>
+        <section>
+          <div id="images">
+              <img src={require("./res/mesa1.jpg")} alt="mesa" width="300"/>
+              <img src={require("./res/cama1.jpg")} alt="cama" width="300"/>
+              <img src={require("./res/cabinet1.jpg")} alt="cabinet" width="300"/>
+              <img src={require("./res/mesa2.jpg")} alt="mesa2" width="300"/>
+          </div>
+        </section>
+      <main>
+        <div class="content">
+              <h2>novo cadastro</h2>
+              <Formulario digitando={digitando} entrando={entrando} cor={cor} mensagem={mensagem} cadastrar={cadastrar}/>
+        </div>
+        <div class="content">
+              <h2>gerenciar móveis cadastrados</h2>
+              <Tabela vetor={entradas} selecionar={selecionar}/>
+        </div>
+
+        <Modal className='modal' show={visible} renderBackdrop={renderBackdrop}>
+          <ModalContent hide={() => setVisible(false)} entrando={entrando} digitando={digitando} alterar={alterar} remover={remover}/>
+        </Modal>
+      </main>
+      <footer>
+          <ul>
+              <li>contato</li>
+              <li>sobre</li>
+              <li>ações</li>
+              <li>ecologia</li>
+          </ul>
+      </footer>
     </div>
+      
   );
 }
 

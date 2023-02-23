@@ -4,13 +4,13 @@ function Tabela({vetor, modal, selecionar}){
             <thead>
                 <tr>
                     <th>#</th>
-                    <th>Nome</th>
-                    <th>Material</th>
-                    <th>Largura</th>
-                    <th>Comprimento</th>
-                    <th>Preço</th>
-                    <th>Data</th>
-                    <th>Selecionar</th>
+                    <th>nome</th>
+                    <th>material</th>
+                    <th>largura(cm)</th>
+                    <th>comprimento(cm)</th>
+                    <th>preço(R$)</th>
+                    <th>data</th>
+                    <th>selecionar</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,7 +24,7 @@ function Tabela({vetor, modal, selecionar}){
                             <td>{obj.comprimento}</td>
                             <td>{obj.preco}</td>
                             <td>{obj.data}</td>
-                            <td><button onClick={() => selecionar(idx)}>Selecionar</button></td>
+                            <td><button onClick={() => selecionar(idx)} className='btn btn-selecionar'>Selecionar</button></td>
                         </tr>
                     ))
                 }

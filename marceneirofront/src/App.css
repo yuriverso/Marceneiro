@@ -1,10 +1,121 @@
-div#modal{
-  text-align: center;
-  background-color: violet;
-  width: auto;
-  margin: 100px;
+@font-face{
+  font-family: "cinzel";
+  src: local("Cinzel"),
+    url("./res/Cinzel.ttf") format("truetype");
 }
 
+body{
+  background-color: rgb(247, 206, 157);
+  margin: 0;
+  font-family: "cinzel";
+}
+header{
+  background-image: linear-gradient(90deg, rgb(172, 128, 76), rgb(230, 181, 121), rgb(172, 128, 76));
+  text-align: center;
+  border: 1px solid black;
+  margin: 0;
+  padding: 30px 5px;
+}
+input#header-input{
+  display: inline;
+  width: 20%;
+  float: right;
+}
+button#header-button{
+  float: right;
+  margin: 0px auto;
+}
+h1{
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  display: block;
+}
+section{
+  margin: 0 auto;
+  text-align: center;
+  width: fit-content;
+}
+main{
+  width: 70%;
+  text-align: center;
+  margin: 20px auto 50px auto;
+  background-color: lightgray;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+footer{
+  border: 1px solid black;
+  margin: 50px 0px 0px 0px;
+  background-color: rgb(172, 128, 76);
+  padding: 30px;
+}
+ul{
+  display: inline-block;
+  margin: auto 50px;
+}
+
+
+table{
+  margin: auto auto 20px auto;
+  border-collapse:collapse;
+  border: 1px solid black;
+  width: 80%;
+}
+th{
+  border: 1px solid black;
+  padding: 5px;
+  font-weight: bold;
+}
+td{
+  border: 1px solid black;
+  padding: 5px;
+  font-weight: 500;
+}
+.formated-form{
+  display: inline-flex;
+  width: 80%;
+  margin: 0px auto 20px auto;
+}
+.form-headers{
+text-align: right;
+margin: 5px 10px;
+}
+.form-inputs{
+  width: 100%;
+  margin: 5px 10px;
+}
+form{
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+div > input[type='text']{
+  margin: 5px auto;
+  width: 90%;
+  display: block;
+}
+form > input[type='button']{
+  margin: 5px auto;
+  display: block;
+}
+h4{
+  margin: 5px;
+}
+.content{
+  background-color: white;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  box-shadow: 1px 1px 2px black;
+}
+div#modal{
+  text-align: center;
+  background-color: rgb(230, 181, 121);
+  width: 50%;
+  margin: 50px auto;
+  padding: 10px;
+  display: flexbox;
+}
 .modal{
   position: fixed;
   top: 0;
@@ -16,7 +127,6 @@ div#modal{
 
 .backdrop{
   position: fixed;
-  /* z-index: 1040; */
   top: 0;
   bottom: 0;
   left: 0;
@@ -24,22 +134,26 @@ div#modal{
   background-color: #000;
   opacity: 0.5;
 }
-
-table{
-  margin: auto;
+.btn{
+  border-radius: 5px;
+  width: fit-content;
+  padding: 10px;
+  margin: 0px 5px 0px 5px;
+  font-family: 'cinzel';
+  font-weight: bold;
 }
-
-form{
-  margin: auto;
-  width: 600px;
-  text-align: center;
+.btn-cadastrar{
+  background-color: rgb(247, 206, 157);
 }
-form > input[type='text']{
-  width: 100%;
+.btn-alterar{
+  background-color: rgb(250, 250, 131);
 }
-form > input[type='button']{
-  margin: 10px 5px;
+.btn-remover{
+  background-color: rgb(238, 134, 134);
 }
-h4{
-  margin: 0px 0px 10px 0px;
+.btn-selecionar{
+  background-color: rgb(247, 206, 157);
+}
+.btn-cancelar{
+  background-color: rgb(177, 177, 177);
 }

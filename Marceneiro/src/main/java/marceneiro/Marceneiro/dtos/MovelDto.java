@@ -1,7 +1,5 @@
 package marceneiro.Marceneiro.dtos;
 
-import java.time.LocalDate;
-
 import org.springframework.stereotype.Component;
 
 

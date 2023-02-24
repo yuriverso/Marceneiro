@@ -115,6 +115,7 @@ div#modal{
   margin: 50px auto;
   padding: 10px;
   display: flexbox;
+  box-shadow: 1px 1px 3px black;
 }
 .modal{
   position: fixed;

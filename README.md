@@ -32,7 +32,7 @@ en
 </p>
 <p align='center'>A CRUD furniture catalog with Spring and React</p>
 
-## Sobre
+## About
 This project is a web system created for a fictitious furniture store. With it, the user can use the CRUD functions (create, read, update and delete) to manage the registered products.
 
 ### Registering a new product
